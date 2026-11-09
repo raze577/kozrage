@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090d">
+  <meta name="description" content="KOZRAGE — дизайн, разработка сайтов, логотипы и индивидуальные решения.">
+  <title>KOZRAGE — Your ideas. Our solutions.</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="KOZRAGE — главная">KOZ<span>RAGE</span><i>®</i></a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <button class="nav-link active" data-page="services">Услуги</button>
+      <button class="nav-link" data-page="order">Мой заказ <span class="count" id="cart-count">0</span></button>
+      <button class="nav-link" data-page="contact">Связь</button>
+    </nav>
+    <a class="header-telegram" href="https://t.me/mynameisraze" target="_blank" rel="noreferrer">Telegram <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> CREATIVE SERVICE STUDIO</div>
+        <h1>ВЫБИРАЙ.<br><span>ЗАКАЗЫВАЙ.</span><br>СОЗДАВАЙ.</h1>
+        <p>Твои идеи — наши решения. Выбирай услуги, собирай свой заказ и отправляй заявку прямо в KOZRAGE.</p>
+        <button class="button button-primary" id="hero-cta">Выбрать услуги <span>↗</span></button>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-core"><span>K</span><small>KOZRAGE</small></div>
+        <div class="float-tag tag-top">DESIGN / 01</div><div class="float-tag tag-bottom">IDEAS INTO REALITY</div>
+      </div>
+      <div class="hero-index">01 — 05 <span>SCROLL TO EXPLORE</span></div>
+    </section>
+
+    <section class="content-section page active" id="page-services">
+      <div class="section-heading">
+        <div><div class="eyebrow">01 / CATALOG</div><h2>Выбери свои услуги<span>.</span></h2><p>Добавь нужные позиции в заявку — детали обсудим лично.</p></div>
+        <div class="section-side">KOZRAGE<br> SERVICE MENU</div>
+      </div>
+      <div class="filters" role="group" aria-label="Категории услуг">
+        <button class="filter active" data-category="all">Все услуги</button>
+        <button class="filter" data-category="design">Дизайн</button>
+        <button class="filter" data-category="digital">Digital</button>
+        <button class="filter" data-category="other">Другое</button>
+      </div>
+      <div class="service-grid" id="service-grid">
+        <article class="service-card" data-id="design" data-category="design" data-name="Разработка дизайна" data-price="2500">
+          <div class="card-top"><span class="service-icon">✳</span><span class="card-number">01 / DESIGN</span></div>
+          <h3>Разработка дизайна</h3><p>Создание визуального стиля и уникальных решений для твоего проекта.</p>
+          <div class="card-bottom"><strong>от 2 500 ₽</strong><button class="add-button">+ Добавить</button></div>
+        </article>
+        <article class="service-card" data-id="website" data-category="digital" data-name="Создание сайта" data-price="5000">
+          <div class="card-top"><span class="service-icon">⌘</span><span class="card-number">02 / DIGITAL</span></div>
+          <h3>Создание сайта</h3><p>Современные сайты, лендинги и веб-проекты с адаптацией под телефон.</p>
+          <div class="card-bottom"><strong>от 5 000 ₽</strong><button class="add-button">+ Добавить</button></div>
+        </article>
+        <article class="service-card" data-id="logo" data-category="design" data-name="Создание логотипа" data-price="1500">
+          <div class="card-top"><span class="service-icon">◈</span><span class="card-number">03 / BRANDING</span></div>
+          <h3>Создание логотипа</h3><p>Фирменный знак, который поможет выделить твой бренд.</p>
+          <div class="card-bottom"><strong>от 1 500 ₽</strong><button class="add-button">+ Добавить</button></div>
+        </article>
+        <article class="service-card" data-id="consult" data-category="other" data-name="Консультация" data-price="1000">
+          <div class="card-top"><span class="service-icon">✧</span><span class="card-number">04 / TALK</span></div>
+          <h3>Консультация</h3><p>Обсудим задачу, идеи и подберём подходящее решение.</p>
+          <div class="card-bottom"><strong>от 1 000 ₽</strong><button class="add-button">+ Добавить</button></div>
+        </article>
+        <article class="service-card" data-id="custom" data-category="other" data-name="Индивидуальный заказ" data-price="0">
+          <div class="card-top"><span class="service-icon">＋</span><span class="card-number">05 / CUSTOM</span></div>
+          <h3>Индивидуальный заказ</h3><p>Нестандартные задачи и проекты под твои требования.</p>
+          <div class="card-bottom"><strong>По запросу</strong><button class="add-button">+ Добавить</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section page" id="page-order">
+      <div class="section-heading"><div><div class="eyebrow">02 / YOUR ORDER</div><h2>Твоя заявка<span>.</span></h2><p>Проверь выбранные услуги и оставь контакт для связи.</p></div></div>
+      <div class="order-layout">
+        <div class="panel">
+          <div class="panel-title">ВЫБРАННЫЕ УСЛУГИ <span id="order-items-count">0</span></div>
+          <div id="order-items" class="order-items"><p class="empty-state">Пока ничего не выбрано. Загляни в каталог.</p></div>
+          <div class="total-row"><span>Предварительная сумма</span><strong id="order-total">0 ₽</strong></div>
+          <p class="fine-print">Итоговая стоимость может измениться в зависимости от объёма и сложности задачи.</p>
+        </div>
+        <form class="panel order-form" id="order-form">
+          <div class="panel-title">ДАННЫЕ ДЛЯ СВЯЗИ</div>
+          <label>Твоё имя<input name="name" autocomplete="name" placeholder="Как к тебе обращаться?" required maxlength="80"></label>
+          <label>Контакт для ответа<input name="contact" placeholder="@username, телефон или email" required maxlength="120"></label>
+          <label>Расскажи о задаче<textarea name="comment" rows="4" placeholder="Дополнительные пожелания (необязательно)" maxlength="1500"></textarea></label>
+          <button class="button button-primary submit-button" type="submit">Отправить заявку <span>↗</span></button>
+          <p class="form-status" id="form-status" role="status"></p>
+          <p class="fine-print">Нажимая кнопку, ты отправляешь заявку команде KOZRAGE через Telegram-бота.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="content-section page" id="page-contact">
+      <div class="eyebrow">03 / GET IN TOUCH</div><h2>Есть идея?<br><span class="gradient-text">Давай обсудим.</span></h2>
+      <p class="contact-intro">Напиши напрямую в Telegram — обсудим задачу, сроки и детали проекта.</p>
+      <a class="telegram-card" href="https://t.me/mynameisraze" target="_blank" rel="noreferrer">
+        <span class="telegram-icon">➤</span><span><small>TELEGRAM</small><strong>@mynameisraze</strong><em>Написать нам</em></span><b>↗</b>
+      </a>
+      <div class="contact-note">KOZRAGE® <span>YOUR IDEAS. OUR SOLUTIONS.</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#">KOZ<span>RAGE</span><i>®</i></a><span>YOUR IDEAS. OUR SOLUTIONS.</span><span>© 2026 KOZRAGE</span></footer>
+  <script src="/script.js"></script>
+</body>
+</html>
